@@ -1,0 +1,52 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE catalog [
+        <!ELEMENT catalog (book*)>
+        <!ELEMENT book ((author | (editor, contributors+)),title,publisher,isbn,price,edition?, volume?)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT editor (#PCDATA)>
+        <!ELEMENT contributors (#PCDATA)>
+        <!ELEMENT edition (#PCDATA)>
+        <!ELEMENT volume (#PCDATA)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT publisher (#PCDATA)>
+        <!ELEMENT isbn (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ATTLIST price currency (EUR|GBP|USD) "EUR">
+
+        ]>
+
+
+<catalog>
+    <book>
+        <author>Dan Brown</author>
+        <title>Origin</title>
+        <publisher>Doubleday</publisher>
+        <isbn>97803085514231</isbn>
+        <price currency="EUR">10</price>
+        <edition>first</edition>
+    </book>
+
+    <book>
+        <author>Louise Tucker</author>
+        <title>An Introductory Guide to Anatomy and Physics</title>
+        <publisher>EMS</publisher>
+        <isbn>9781903348345</isbn>
+        <price currency="GBP">26.60</price>
+        <edition>fifth</edition>
+    </book>
+
+    <book>
+        <editor>Rebecca E. Lyons</editor>
+        <contributors>Samantha J.Rayner</contributors>
+        <contributors>Anam Ali</contributors>
+        <title>The Acadamic Book of the Future</title>
+        <publisher>British Library</publisher>
+        <isbn>9781903348345</isbn>
+        <price currency="GBP">0.0</price>
+    </book>
+
+
+
+
+</catalog>
